@@ -152,10 +152,28 @@ summary = df_clean.groupby(["model", "processor", "screen_size", "ram", "storage
     avg_price=("price_num", "mean")
 ).reset_index()
 
-# === Save ===
+# === Save Clean Data ===
 df_clean = df_clean.drop(columns=["link"])
 df_clean.to_csv(os.path.join(output_data_dir, "macbook_data_clean.csv"), index=False)
 summary.to_csv(os.path.join(output_data_dir, "macbook_summary_stats.csv"), index=False)
+
+# === Save Unknown Processor Listings ===
+unknown_processors = df[
+    (df["processor"] == "Unknown") & df["model"].str.startswith("MacBook")
+][["model", "screen_size", "processor", "title"]]
+unknown_processors.to_csv(os.path.join(output_data_dir, "unknown_processors.csv"), index=False)
+
+# === Save Unknown Storage Listings ===
+unknown_storage = df[
+    (df["storage"] == "Unknown") & df["model"].str.startswith("MacBook")
+][["model", "screen_size", "storage", "title"]]
+unknown_storage.to_csv(os.path.join(output_data_dir, "unknown_storage.csv"), index=False)
+
+# === Save Unknown RAM Listings ===
+unknown_ram = df[
+    (df["ram"] == "Unknown") & df["model"].str.startswith("MacBook")
+][["model", "screen_size", "ram", "title"]]
+unknown_ram.to_csv(os.path.join(output_data_dir, "unknown_ram.csv"), index=False)
 
 # === Visualization ===
 sns.set(style="whitegrid")
