@@ -47,42 +47,51 @@ def extract_macbook_model(title):
     is_pro = "pro" in title
 
     # Match M1/M2/M3/M4 variants including pro/max
-    processor_match = re.search(r"m(1|2|3|4)\s*(pro|max)?", title)
+    processor_match = re.search(r"m(1|2|3|4)(\s*pro|\s*max)?", title)
     processor = None
     if processor_match:
         base = f"M{processor_match.group(1)}"
         variant = processor_match.group(2)
         if variant:
-            processor = f"{base}{variant.capitalize()}"
+            processor = f"{base}{variant.replace(' ', '').capitalize()}"
         else:
             processor = base
     else:
-        # Fallback to Intel i7/i9
-        intel_match = re.search(r"\bi(7|9)\b", title)
+        # Fallback to Intel i3/i5/i7/i9
+        intel_match = re.search(r"\bi(3|5|7|9)\b", title)
         if intel_match:
             processor = f"Intel i{intel_match.group(1)}"
 
     # Screen size
-    size_match = re.search(r"(13|14|15|16)(\s*\"|\s*inch)?", title)
+    size_match = re.search(r"(13|14|15|16)(\s*\"|\s*inch|\s*吋)?", title)
     screen = f"{size_match.group(1)}" if size_match else "Unknown"
+
+    # Improve detection of M1 Pro/Max based on screen size
+    if processor == "M1" and is_pro and screen in ["14", "16"]:
+        processor = "M1Pro"
+    if processor == "M2" and is_pro and screen in ["14", "16"]:
+        processor = "M2Pro"
 
     # Validate combinations
     if is_air:
         if screen not in ["13", "15"]:
             return "MacBook Unknown", processor or "Unknown", screen
-        if processor in ["M1", "M2", "M3"]:
-            return "MacBook Air", processor, screen
-        return "MacBook Air", "Unknown", screen
+        return "MacBook Air", processor or "Unknown", screen
 
     if is_pro:
         if screen == "13" and processor in ["M1", "M2"]:
             return "MacBook Pro", processor, screen
         elif screen in ["14", "16"]:
-            valid_pros = ["M1Pro", "M1Max", "M2Pro", "M2Max", "M3Pro", "M3Max", "M4", "Intel i7", "Intel i9"]
+            valid_pros = [
+                "M1Pro", "M1Max",
+                "M2Pro", "M2Max",
+                "M3", "M3Pro", "M3Max",
+                "M4", "M4Pro", "M4Max",
+                "Intel i3", "Intel i5", "Intel i7", "Intel i9"
+            ]
             if processor in valid_pros:
                 return "MacBook Pro", processor, screen
-            else:
-                return "MacBook Pro", "Unknown", screen
+            return "MacBook Pro", "Unknown", screen
 
     return "MacBook Unknown", processor or "Unknown", screen
 
