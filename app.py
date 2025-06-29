@@ -66,11 +66,23 @@ def extract_macbook_model(title):
     size_match = re.search(r"(13|14|15|16)(\s*\"|\s*inch)?", title)
     screen = f"{size_match.group(1)}" if size_match else "Unknown"
 
+    # Validate combinations
     if is_air:
-        return "MacBook Air", processor or "Unknown", screen
+        if screen not in ["13", "15"]:
+            return "MacBook Unknown", processor or "Unknown", screen
+        if processor in ["M1", "M2", "M3"]:
+            return "MacBook Air", processor, screen
+        return "MacBook Air", "Unknown", screen
 
     if is_pro:
-        return "MacBook Pro", processor or "Unknown", screen
+        if screen == "13" and processor in ["M1", "M2"]:
+            return "MacBook Pro", processor, screen
+        elif screen in ["14", "16"]:
+            valid_pros = ["M1Pro", "M1Max", "M2Pro", "M2Max", "M3Pro", "M3Max", "M4", "Intel i7", "Intel i9"]
+            if processor in valid_pros:
+                return "MacBook Pro", processor, screen
+            else:
+                return "MacBook Pro", "Unknown", screen
 
     return "MacBook Unknown", processor or "Unknown", screen
 
