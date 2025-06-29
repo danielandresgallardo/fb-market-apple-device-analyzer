@@ -46,41 +46,33 @@ def extract_macbook_model(title):
     is_air = "air" in title
     is_pro = "pro" in title
 
-    processor_match = re.search(r"m(1|2|3|4)(\s*pro|\s*max)?", title)
+    # Match M1/M2/M3/M4 variants including pro/max
+    processor_match = re.search(r"m(1|2|3|4)\s*(pro|max)?", title)
     processor = None
     if processor_match:
-        processor = f"M{processor_match.group(1)}"
-        if processor_match.group(2):
-            processor += processor_match.group(2).replace(" ", "").capitalize()
+        base = f"M{processor_match.group(1)}"
+        variant = processor_match.group(2)
+        if variant:
+            processor = f"{base}{variant.capitalize()}"
+        else:
+            processor = base
+    else:
+        # Fallback to Intel i7/i9
+        intel_match = re.search(r"\bi(7|9)\b", title)
+        if intel_match:
+            processor = f"Intel i{intel_match.group(1)}"
 
     # Screen size
     size_match = re.search(r"(13|14|15|16)(\s*\"|\s*inch)?", title)
     screen = f"{size_match.group(1)}" if size_match else "Unknown"
 
-    # Air logic
     if is_air:
-        if processor:
-            return f"MacBook Air", processor, screen
-        return f"MacBook Air", "Unknown", screen
+        return "MacBook Air", processor or "Unknown", screen
 
-    # Pro logic
     if is_pro:
-        if processor in ["M1", "M2"]:
-            if screen == "13\"":
-                return f"MacBook Pro", processor, screen
-            elif screen in ["14\"", "16\""]:
-                if "max" in title:
-                    return f"MacBook Pro", f"{processor}Max", screen
-                return f"MacBook Pro", f"{processor}Pro", screen
-        elif processor in ["M3", "M4"]:
-            if "max" in title:
-                return f"MacBook Pro", f"{processor}Max", screen
-            elif re.search(rf"{processor.lower()}\s*pro", title):
-                return f"MacBook Pro", f"{processor}Pro", screen
-            return f"MacBook Pro", processor, screen
-        return f"MacBook Pro", "Unknown", screen
+        return "MacBook Pro", processor or "Unknown", screen
 
-    return "MacBook Unknown", "Unknown", screen
+    return "MacBook Unknown", processor or "Unknown", screen
 
 def extract_storage(title):
     title = title.lower()
