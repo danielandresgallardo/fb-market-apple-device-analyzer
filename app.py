@@ -46,52 +46,68 @@ def extract_macbook_model(title):
     is_air = "air" in title
     is_pro = "pro" in title
 
-    # Match M1/M2/M3/M4 variants including pro/max
-    processor_match = re.search(r"m(1|2|3|4)(\s*pro|\s*max)?", title)
+    # === Extract processor (M1–M4, Pro/Max/Ultra) ===
+    processor_match = re.search(r"m\s*([1234])\s*(pro|max|ultra)?", title)
     processor = None
     if processor_match:
         base = f"M{processor_match.group(1)}"
         variant = processor_match.group(2)
         if variant:
-            processor = f"{base}{variant.replace(' ', '').capitalize()}"
+            processor = f"{base}{variant.capitalize()}"
         else:
             processor = base
     else:
-        # Fallback to Intel i3/i5/i7/i9
-        intel_match = re.search(r"\bi(3|5|7|9)\b", title)
+        intel_match = re.search(r"\bi[3579]\b", title)
         if intel_match:
-            processor = f"Intel i{intel_match.group(1)}"
+            processor = f"Intel {intel_match.group(0)}"
 
-    # Screen size
-    size_match = re.search(r"(13|14|15|16)(\s*\"|\s*inch|\s*吋)?", title)
-    screen = f"{size_match.group(1)}" if size_match else "Unknown"
+    # === Extract screen size ===
+    screen_match = re.search(r"(11|12|13|14|15|16)(\.\d)?\s*(吋|inch|\"|”)?", title)
+    screen = screen_match.group(1) if screen_match else "Unknown"
 
-    # Improve detection of M1 Pro/Max based on screen size
-    if processor == "M1" and is_pro and screen in ["14", "16"]:
-        processor = "M1Pro"
-    if processor == "M2" and is_pro and screen in ["14", "16"]:
-        processor = "M2Pro"
+    # === Check for known model numbers ===
+    model_map = {
+        "a1466": ("MacBook Air", "13"),
+        "a1932": ("MacBook Air", "13"),
+        "a2179": ("MacBook Air", "13"),
+        "a2337": ("MacBook Air", "13"),  # M1 Air
+        "a2681": ("MacBook Air", "13"),  # M2 Air
+        "a3113": ("MacBook Air", "13"),  # M3 Air
+        "a1534": ("MacBook Retina", "12"),  # Retina 12"
+        "a1989": ("MacBook Pro", "13"),
+        "a1990": ("MacBook Pro", "15"),
+        "a2251": ("MacBook Pro", "13"),
+        "a2141": ("MacBook Pro", "16"),
+        "a2442": ("MacBook Pro", "14"),
+        "a2485": ("MacBook Pro", "16"),
+        "a2780": ("MacBook Pro", "14"),
+        "a2786": ("MacBook Pro", "16"),
+    }
 
-    # Validate combinations
+    model_number_match = re.search(r"a\d{4}", title)
+    if model_number_match:
+        code = model_number_match.group(0)
+        if code in model_map:
+            model, model_screen = model_map[code]
+            screen = model_screen  # override size
+            return model, processor or "Unknown", screen
+
+    # === Heuristic cleanup ===
     if is_air:
+        # Remove false 12" for M1/M2 Air (common scraping error)
+        if processor and screen == "12":
+            screen = "13"
         if screen not in ["13", "15"]:
-            return "MacBook Unknown", processor or "Unknown", screen
+            screen = "13"  # fallback
         return "MacBook Air", processor or "Unknown", screen
 
     if is_pro:
-        if screen == "13" and processor in ["M1", "M2"]:
-            return "MacBook Pro", processor, screen
-        elif screen in ["14", "16"]:
-            valid_pros = [
-                "M1Pro", "M1Max",
-                "M2Pro", "M2Max",
-                "M3", "M3Pro", "M3Max",
-                "M4", "M4Pro", "M4Max",
-                "Intel i3", "Intel i5", "Intel i7", "Intel i9"
-            ]
-            if processor in valid_pros:
-                return "MacBook Pro", processor, screen
-            return "MacBook Pro", "Unknown", screen
+        if screen not in ["13", "14", "15", "16"]:
+            screen = "13"  # default to smallest Pro
+        return "MacBook Pro", processor or "Unknown", screen
+
+    if "retina" in title and screen == "12":
+        return "MacBook Retina", processor or "Intel", screen
 
     return "MacBook Unknown", processor or "Unknown", screen
 
