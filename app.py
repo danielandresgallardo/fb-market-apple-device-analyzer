@@ -208,6 +208,18 @@ unknown_model_df[["model", "screen_size", "ram", "storage", "title"]].to_csv(
 )
 print(f"Saved {len(unknown_model_df)} unknown model listings to macbook_unknown_model.csv")
 
+# === Save Unknown Screen Size Listings ===
+unknown_screen_size = df[
+    (df["screen_size"] == "Unknown") & df["model"].str.startswith("MacBook")
+][["model", "processor", "screen_size", "storage", "ram", "title"]]
+unknown_screen_size.to_csv(os.path.join(output_data_dir, "unknown_screen_size.csv"), index=False)
+print(f"Saved {len(unknown_screen_size)} unknown screen size listings to unknown_screen_size.csv")
+
+# === Save Full Verification File ===
+verification_cols = ["model", "processor", "screen_size", "storage", "ram", "title"]
+df[verification_cols].to_csv(os.path.join(output_data_dir, "macbook_verification.csv"), index=False)
+print(f"Saved verification file with {len(df)} listings to macbook_verification.csv")
+
 # === Visualization ===
 sns.set(style="whitegrid")
 
