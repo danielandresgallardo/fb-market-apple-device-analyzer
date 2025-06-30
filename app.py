@@ -184,6 +184,14 @@ unknown_ram = df[
 ][["model", "screen_size", "ram", "title"]]
 unknown_ram.to_csv(os.path.join(output_data_dir, "unknown_ram.csv"), index=False)
 
+# === Export Unknown Model Listings ===
+unknown_model_df = df[df["model"] == "MacBook Unknown"]
+unknown_model_df[["model", "screen_size", "ram", "storage", "title"]].to_csv(
+    os.path.join(output_data_dir, "macbook_unknown_model.csv"),
+    index=False
+)
+print(f"Saved {len(unknown_model_df)} unknown model listings to macbook_unknown_model.csv")
+
 # === Visualization ===
 sns.set(style="whitegrid")
 
