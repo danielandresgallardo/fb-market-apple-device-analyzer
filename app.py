@@ -123,12 +123,12 @@ def extract_ram(title):
     title = title.lower()
 
     # Try direct match: 8gb, 16g, etc.
-    match = re.search(r"(?<!\d)(8|16|24|32|64|96|128)\s*(g|gb|記憶體|記)?(?!\w)", title)
+    match = re.search(r"(?<![a-z0-9])(?<!m)(4|8|16|24|32|64|96|128)\s*(g|gb|記憶體|記)?(?!\w)", title)
     if match:
         return int(match.group(1))
 
     # Try combined format like 8+256 or 16/512
-    combo_match = re.search(r"(8|16|24|32|64|96|128)\s*[\+/]\s*(256|512|1024|2048)", title)
+    combo_match = re.search(r"(?<!m)(4|8|16|24|32|64|96|128)\s*[\+/]\s*(256|512|1024|2048)", title)
     if combo_match:
         return int(combo_match.group(1))
 
