@@ -74,4 +74,3 @@ pip install -r requirements.txt
 3. View outputs in the output/ directory.
 
 Author: Daniel Andres Gallardo
-License: MIT
