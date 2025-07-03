@@ -1,83 +1,297 @@
 model,screen_size,ram,title
-MacBook Air,13,Unknown,Macbook Air M2 256GB
-MacBook Air,13,Unknown,Macbook Air M3 512GB Midnight Blue
-MacBook Air,13,Unknown,Macbook air m1(Apple Care+)
-MacBook Air,13,Unknown,MacBook Air M3 13吋
-MacBook Air,13,Unknown,Macbook air m1(Apple Care+)
-MacBook Air,13,Unknown,MacBook Air
-MacBook Air,13,Unknown,Macbook Air 13 inch Pink 2019/No scratches/barely used
-MacBook Pro,13,Unknown,Macbook pro 13吋2015銀色
-MacBook Pro,14,Unknown,超新14 吋MacBook Pro M4 512G 16G銀色
-MacBook Air,13,Unknown,Apple MacBook Air 13吋完美無暇
-MacBook Air,13,Unknown,macbook air 11吋功能全部正常有原盒，已重塗cpu散熱膏+更換新電池，有興趣都可詢問並蘆洲面交
-MacBook Air,13,Unknown,macbook air 2013
-MacBook Air,15,Unknown,Macbookair m3 15吋 太空灰 可用13吋16g的換
-MacBook Air,15,Unknown,全新沒拆封 最新2025 M4 MacBook Air 15吋 16G記憶體/512容量
-MacBook Air,15,Unknown,MacBook Air 15 A2941 星光色
-MacBook Air,13,Unknown,MacBook Air 13 (M3)午夜藍（已售出）
-MacBook Air,13,Unknown,2023MacBook Air 13吋/M2晶片/8核心的 CPU以及10核心GPU/記憶體512GB - 太空灰
-MacBook Air,13,Unknown,特殊規格 16G記憶體/1TB ssd m2 MacBook Air 13
 MacBook Air,13,Unknown,MacBook Air M3 2024 A3113
 MacBook Air,13,Unknown,MacBook Air M1
-MacBook Air,13,Unknown,MacBook Air 2020
-MacBook Air,13,Unknown,MacBook Air M1
 MacBook Pro,13,Unknown,MacBook Pro M1 Pro
-MacBook Air,13,Unknown,MacBook Air M2 13吋
-MacBook Pro,13,Unknown,最新2024年MacBook Pro M4Pro 24G記憶體1TB 客製奈米紋理顯示器
-MacBook Air,15,Unknown,MacBook Air 2025 15寸M4 256GB+16GRAM
-MacBook Air,13,Unknown,MacBook Air 13吋M1 2020 (A2337)
-MacBook Air,13,Unknown,Macbook Air 13 吋 M3
-MacBook Air,13,Unknown,MacBook Air M3 13吋 太空灰
-MacBook Air,13,Unknown,【售】macbook air
-MacBook Pro,14,Unknown,‼️超級新‼️保固內‼️售太空灰 MacBook Pro 14--inch M3 ❤️
-MacBook Air,13,Unknown,MacBookAir
-MacBook Pro,13,Unknown,Apple MacBook Pro M4 -太空黑色（2024版）
-MacBook Pro,13,Unknown,256G ssd 超值入門 2017 MacBook Pro retina 13
-MacBook Pro,13,Unknown,"MacBook Pro 13"""
-MacBook Pro,13,Unknown,MacBook Pro13-inch A1706 2017
-MacBook Air,13,Unknown,【商品】近全新 MacBook Air 13-inch A2337
+MacBook Air,13,Unknown,MacBook Air 2020
+MacBook Unknown,Unknown,Unknown,MacBook M1 2020
+MacBook Pro,13,Unknown,MacBook Pro(13英吋，2019）
+MacBook Pro,13,Unknown,超值2020 MacBook Pro retina 13
+MacBook Pro,13,Unknown,MacBook Pro 2020
 MacBook Air,13,Unknown,MacBook Air 13吋 2017
-MacBook Pro,13,Unknown,自售MACBOOK Pro 13吋 (型號A1502) 附原廠充電器 電池狀態正常 外觀有正常使用的刻碰 詳見描述及照片
-MacBook Air,13,Unknown,Apple MacBook Air 13吋外觀完美
-MacBook Pro,14,Unknown,（售）2014年末 Macbook Pro 15”Retina
+MacBook Pro,13,Unknown,Macbook pro M1 2020
+MacBook Pro,13,Unknown,Macbook pro m1
+MacBook Air,13,Unknown,MacBook Air M1
+MacBook Air,13,Unknown,13.6吋（2022年 M2）MacBook Air 256G-午夜色
+MacBook Pro,13,Unknown,最新2024年MacBook Pro M4Pro 24G記憶體1TB 客製奈米紋理顯示器
+MacBook Pro,13,Unknown,售MacBook Pro 512G 盒在
+MacBook Pro,14,Unknown,MacBook pro 14’ M1 Pro
+MacBook Air,13,Unknown,Macbook air m1(Apple Care+)
+MacBook Air,15,Unknown,MacBook Air 15 A2941 星光色
+MacBook Air,15,Unknown,MacBook Air M2 15吋
+MacBook Pro,13,Unknown,MacBook Pro M1 13
+MacBook Pro,13,Unknown,Apple MacBook Pro M4 -太空黑色（2024版）
+MacBook Pro,13,Unknown,MacBooks pro 2020
+MacBook Air,13,Unknown,MacBook Air 13吋M1 2020 (A2337)
+MacBook Pro,14,Unknown,‼️超級新‼️保固內‼️售太空灰 MacBook Pro 14--inch M3 ❤️
+MacBook Pro,14,Unknown,徵求 MacBook Pro14吋 M4 台灣蘋果公司貨 盒裝原廠配件齊全 雙北面交
+MacBook Air,15,Unknown,誠收 Macbook air m2 15吋
+MacBook Air,13,Unknown,【商品】近全新 MacBook Air 13-inch A2337
+MacBook Pro,13,Unknown,Apple Macbook Pro 13” 2015
+MacBook Pro,13,Unknown,Mac MacBook Pro A1708 2018 二手筆記型電腦
+MacBook Pro,16,Unknown,MacBook Pro 2016 暗屏 需外接HDMI OS Monterey
+MacBook Air,13,Unknown,Apple MacBook Air 13吋完美無暇
 MacBook Air,13,Unknown,MacBook Air (A1466)
-MacBook Air,13,Unknown,MacBook Air 13吋 M4 256G
-MacBook Air,13,Unknown,512容量 M1 CPU MacBook Air 13 玫瑰金
+MacBook Air,15,Unknown,全新沒拆封 最新2025 M4 MacBook Air 15吋 16G記憶體/512容量
+MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 1TB
+MacBook Air,13,Unknown,特殊規格 16G記憶體/1TB ssd m2 MacBook Air 13
+MacBook Air,15,Unknown,MacBook Air 2025 15寸M4 256GB+16GRAM
+MacBook Pro,16,Unknown,超值 M1 Pro MacBook Pro retina 16吋
+MacBook Air,13,Unknown,MacBook Air 13 (M3)午夜藍（已售出）
+MacBook Air,13,Unknown,Macbook Air 13 吋 M3
+MacBook Air,13,Unknown,M1 MacBook Air ￼外觀良好電池健康度正常￼￼￼
+MacBook Pro,13,Unknown,"Apple MacBook Pro 13吋,M2,2022"
+MacBook Pro,14,Unknown,‼️超級新‼️售太空灰 MacBook Pro 14--inch M3 ❤️
+MacBook Air,13,Unknown,MacBook Air
+MacBook Pro,13,Unknown,MacBook Pro13-inch A1706 2017
+MacBook Pro,15,Unknown,Macbook PRO 15吋 2019 i7 256G
+MacBook Air,13,Unknown,Macbook Air 13 inch Pink 2019/No scratches/barely used
+MacBook Pro,16,Unknown,apple MacBook Pro 256GB 灰2016
+MacBook Air,13,Unknown,2025 MacBook Air 13吋 512G 全系列
+MacBook Pro,13,Unknown,售 2018 MacBook pro
+MacBook Pro,13,Unknown,"MacBook Pro 13"""
+MacBook Pro,16,Unknown,2016 Macbook PRO 13吋 A1502
+MacBook Pro,13,Unknown,MacBook Pro M1 (late 2020) 13英吋
+MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB
 MacBook Pro,13,Unknown,2012 MacBook Pro 2000塊
 MacBook Air,15,Unknown,全新出清 MacBook Air 15
+MacBook Air,13,Unknown,MacBook Air M2 13吋
+MacBook Air,13,Unknown,Macbook air m1(Apple Care+)
+MacBook Pro,14,Unknown,Macbook Pro 14吋 M1Pro 配件多
+MacBook Air,13,Unknown,【售】macbook air
+MacBook Pro,16,Unknown,2021 MacBook Pro M1 16寸 512GB
+MacBook Air,13,Unknown,「保固兩年」MacBook Air M4 2025 256G 僅使用幾次 幾乎全新 台北實體門市 可面交 蘋果筆記型電腦 二手筆電
+MacBook Pro,14,Unknown,全新未拆 客製36記憶體/1TB SSD M3 Pro 晶片 MacBook Pro retina 14吋
+MacBook Air,13,Unknown,MacBook Air M3 13吋
+MacBook Pro,16,Unknown,Apple MacBook Pro M3晶片 16吋 黑色 2023 價格可議
+MacBook Pro,13,Unknown,自售MACBOOK Pro 13吋 (型號A1502) 附原廠充電器 電池狀態正常 外觀有正常使用的刻碰 詳見描述及照片
+MacBook Pro,13,Unknown,Apple MacBook pro i5 2.7 13吋
+MacBook Air,13,Unknown,MacBook Air 13吋 M4 256G
+MacBook Pro,16,Unknown,Macbook pro 16吋M3 Pro 18GB 1TB
+MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB 98%
 MacBook Air,13,Unknown,稀有16G記憶體/1TB SSD M2 MacBook Air 13
-MacBook Air,13,Unknown,【超新 MacBook Air M2｜2022 年版｜附原廠配件｜電池健康 97%】
-MacBook Pro,16,Unknown,M1 超值客製款16G記憶體/512 ssd M1 2021 Macbook Pro 13
+MacBook Air,15,Unknown,售2023 MacBook Air 15吋 星光色 保固內 電池100% 可議
+MacBook Air,15,Unknown,MacBook Air 15 A2941 星光色
+MacBook Air,13,Unknown,2023MacBook Air 13吋/M2晶片/8核心的 CPU以及10核心GPU/記憶體512GB - 太空灰
+MacBook Air,13,Unknown,Apple MacBook Air M2
+MacBook Pro,13,Unknown,MacBook Pro 2020 512G 16G出售｜台北嘉義可面交｜原廠配件皆在｜電池健康
 MacBook Pro,14,Unknown,"MacBook Pro 14"" A2918"
+MacBook Air,13,Unknown,MacBook Air 13-inch M1（A2337）
+MacBook Air,13,Unknown,MacBook Air M2 (13.6吋)
+MacBook Pro,13,Unknown,剪輯猛獸 全機包膜保固還有330幾天 M3 max 36G/1TB SSD MacBook Pro 14吋
+MacBook Pro,13,Unknown,2017 13吋MacBook Pro intel Core i5晶片 太空灰
+MacBook Air,13,Unknown,macbook air 11吋功能全部正常有原盒，已重塗cpu散熱膏+更換新電池，有興趣都可詢問並蘆洲面交
+MacBook Pro,16,Unknown,MacBook Pro 16inch M4 Max 14C32G 36G 1TB 2024 全新機
+MacBook Pro,13,Unknown,256G ssd 超值入門 2017 MacBook Pro retina 13
+MacBook Pro,13,Unknown,MacBook Pro A1708 512GB SSD硬碟
+MacBook Pro,16,Unknown,32G記憶體 I9 八核心 MacBook Pro 16吋 1TB SSD 容量
+MacBook Air,13,Unknown,"MacBook Air (13 英吋, 2013年中) 充電器全新 蘋果筆電"
+MacBook Pro,13,Unknown,【蘋果最後的旗艦】蘋果 Apple MacBook Pro 2012 蘋果筆電 已升級滿血 銀色
+MacBook Air,13,Unknown,【超新 MacBook Air M2｜2022 年版｜附原廠配件｜電池健康 97%】
+MacBook Air,13,Unknown,MacBook Air m2
+MacBook Air,13,Unknown,2025 Apple MacBook M4 Air 13”
+MacBook Pro,16,Unknown,賣MacBook pro m2pro 16寸
+MacBook Pro,16,Unknown,M3 max MacBook Pro 16寸
+MacBook Pro,13,Unknown,MacBook Pro (2020)
+MacBook Air,13,Unknown,MacBook Air M1
+MacBook Air,13,Unknown,Apple MacBook Air M3
+MacBook Pro,14,Unknown,超值 32G記憶體M1 Pro MacBook 14吋
+MacBook Air,13,Unknown,MacBook Air 2020
+MacBook Pro,13,Unknown,"Apple MacBook Pro 13吋,M2,2022"
+MacBook Pro,13,Unknown,Apple Macbook pro 13吋 銀色 2020年
+MacBook Air,13,Unknown,Apple MacBook Air 女用
+MacBook Pro,14,Unknown,售MacBook Pro 14
+MacBook Pro,14,Unknown,【售】MacBook Pro 14吋 M3 Pro / 18GB / 512G / 銀
+MacBook Unknown,Unknown,Unknown,MacBook
+MacBook Pro,13,Unknown,MacBook Pro（13 英寸，M2，2022 年）
+MacBook Pro,15,Unknown,MacBook Pro 15-inch 2018高階款
+MacBook Pro,14,Unknown,❤️‼️售MacBook Pro 14--inch M3 近全新割愛❤️
+MacBook Pro,13,Unknown,[售]MacBook pro 13吋Touch Bar A2159 灰
+MacBook Pro,13,Unknown,售二手蘋果筆電 2018年13吋MacBook pro
+MacBook Air,13,Unknown,Apple MacBook Air 13吋外觀完美
+MacBook Air,13,Unknown,MacBook Air 13″ Mid 2013
+MacBook Unknown,Unknown,Unknown,Magsafe Macbook Charger
+MacBook Pro,13,Unknown,2021 Apple MacBook pro M1 pro
+MacBook Pro,13,Unknown,電腦MacBook pro 2018 19 便宜出售
+MacBook Pro,14,Unknown,影音、平面設計、室內設計、編曲適合 高階版本M2 Pro MacBook Pro 14吋 1TB SSD
+MacBook Air,13,Unknown,[今天面交再打折］Apple MacBook Air 2020 Retina 蘋果輕薄筆電 太空灰
+MacBook Air,13,Unknown,全新出清 MacBook Air 512GB
+MacBook Pro,13,Unknown,MacBook Pro 13吋 (A1708)
+MacBook Pro,14,Unknown,9.9成新 可議 MacBook Pro M3 pro 14寸 18GB記憶體 保固內
+MacBook Air,13,Unknown,特殊規格 保固內 24G記憶體/2TB ssd m2 MacBook Air 13
+MacBook Air,13,Unknown,MacBook Air M3 13吋 太空灰
+MacBook Air,13,Unknown,售 macbook air 銀色
+MacBook Pro,16,Unknown,Apple MacBook Pro M3 16吋 黑色
+MacBook Unknown,13,Unknown,MacBook m2 13吋
+MacBook Air,13,Unknown,Apple macbook air M4 512GB
+MacBook Air,13,Unknown,MacBook Air 9成新 2024 12月購買 還是習慣使用Windows故出售
+MacBook Pro,13,Unknown,2022年 M2 MacBook Pro 13吋（有touch bar)
+MacBook Pro,15,Unknown,MacBook Pro 15-inch 2018高階款
+MacBook Air,13,Unknown,MacBookAir
+MacBook Air,15,Unknown,保固中 MacBook Air 15吋 M3｜電池健康度 100%
+MacBook Pro,13,Unknown,二手MacBook Pro（13 英寸，2019，四個 Thunderbolt 3 連接埠）
+MacBook Pro,14,Unknown,"MacBook Pro, M3 pro 14吋 太空黑-12CPU, 18GPU, 18G RAM, 1TB SSD"
+MacBook Pro,16,Unknown,升級售出 MacBook Pro 2016（TouchBar款）
+MacBook Pro,13,Unknown,MacBook Pro 13.3吋 2015
+MacBook Air,15,Unknown,2025 MacBook Air 15吋 256G全系列
+MacBook Air,13,Unknown,MacBook Air
+MacBook Pro,14,Unknown,（售）2014年末 Macbook Pro 15”Retina
+MacBook Unknown,Unknown,Unknown,MacBook charger extension cord￼電線
+MacBook Pro,14,Unknown,保固還有半年外觀超美 超值M1 Pro 14吋 Macbook
+MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB保固內
+MacBook Pro,13,Unknown,MacBook Pro
+MacBook Air,13,Unknown,全新未拆 MacBook Air
+MacBook Air,13,Unknown,MacBook Air M1 13.3吋
+MacBook Pro,13,Unknown,Macbook Pro 13吋 2018
+MacBook Air,13,Unknown,二手MacBook Air M1
+MacBook Air,13,Unknown,MacBook Air 13 M4 天藍
+MacBook Air,13,Unknown,近全新 MacBook Air 13-inch A2337
+MacBook Air,13,Unknown,MacBook Air M2 星空色 256g 完美主義機況
+MacBook Air,13,Unknown,MacBook Air
+MacBook Air,13,Unknown,Macbook Air 美版（A1932）
+MacBook Unknown,16,Unknown,<售> Apple Macbook M3Max 16吋 48G 1TB
+MacBook Air,13,Unknown,"MacBook Air (Retina. 13-inch, 2020)"
+MacBook Pro,14,Unknown,[徵] m1 pro macbook pro 14吋
+MacBook Pro,14,Unknown,【售】電池100% MacBook Pro 14吋 M3 Pro / 18GB / 512G / 銀
+MacBook Pro,13,Unknown,MacBook Pro M1
+MacBook Pro,13,Unknown,MacBook Pro 13寸
+MacBook Pro,13,Unknown,MacBook Pro M1 13吋（整新機）
+MacBook Air,13,Unknown,MacBook Air 2021
+MacBook Pro,16,Unknown,2022 MacBook Pro 16吋 M1 Pro Max
+MacBook Pro,13,Unknown,2017 MacBook pro 13吋
+MacBook Pro,13,Unknown,MacBook Pro 2018 13吋 256G A1989
+MacBook Pro,13,Unknown,MacBook Pro 2019 Touch Bar 支援4K
+MacBook Air,13,Unknown,￼￼ADAM Hub A01m 四合一 USB-C HUB集線器 4K顯示(一秒擴充MacBook Air)
+MacBook Air,13,Unknown,會發光的MAC已絕跡 MacBook Air 2013
+MacBook Pro,13,Unknown,MacBook Pro 2017 13-inch
+MacBook Air,13,Unknown,MacBook Air 13吋 2015
+MacBook Unknown,Unknown,Unknown,Apple 原廠 MacBook SSD 硬碟 256GB
+MacBook Pro,15,Unknown,"MacBook Pro 15"" Late 2011 [Core i7-2.2 GHz]"
+MacBook Pro,13,Unknown,MacBook Pro
+MacBook Pro,13,Unknown,「收」Apple MacBook Pro m1 13寸
+MacBook Pro,13,Unknown,MacBook Pro 再問就沒了
+MacBook Pro,13,Unknown,MacBook Pro 2018
+MacBook Air,13,Unknown,MacBook Air M1
+MacBook Pro,15,Unknown,Apple MacBook Pro 15英寸 512g
+MacBook Pro,13,Unknown,MacBook Pro 13吋 Touch Bar 2016 $8500 功能都正常 雙北可面交
+MacBook Air,13,Unknown,MacBook Air M2 2022年13.6吋
+MacBook Pro,14,Unknown,2021 Macbook Pro 14
+MacBook Air,13,Unknown,MacBook Air M3
+MacBook Air,13,Unknown,MacBook Air M2
+MacBook Pro,14,Unknown,（售）2014年末 Macbook Pro 15”Retina
+MacBook Pro,14,Unknown,Apple M1 MacBookPro 2021 14吋
+MacBook Pro,13,Unknown,MacBook Pro M1
+MacBook Pro,13,Unknown,蘋果原廠 升級用硬碟，M.2 SSD 512G A1398 A1502 macbook pro 免運寄出，7-11貨到付款
+MacBook Pro,13,Unknown,超值入門 2017 MacBook Pro retina 13
+MacBook Air,13,Unknown,MacBook Air 九成新 3C產品等
+MacBook Pro,14,Unknown,徵《MacBook Pro 14吋》
+MacBook Pro,13,Unknown,MacBook Pro 電源線
+MacBook Pro,14,Unknown,MacBook Apple M1 Pro 14吋
+MacBook Air,13,Unknown,MacBook Air 2020 13吋 256G 金色
+MacBook Pro,13,Unknown,MacBook Pro m3
+MacBook Air,13,Unknown,Macbook air m1
+MacBook Air,13,Unknown,Macbook air M3 ‘13 inch (Personal Used)
+MacBook Air,13,Unknown,Macbook Air M2 512 GB
+MacBook Pro,13,Unknown,M3 MacBook Pro
+MacBook Air,13,Unknown,MacBook Air 2020年
+MacBook Air,13,Unknown,MacBook Air m3 512gb
+MacBook Air,15,Unknown,MacBook Air 2015 年（電池100%循環77次）換過
+MacBook Pro,13,Unknown,Apple MacBook Pro 13吋 2015年
+MacBook Pro,13,Unknown,Macbook pro
+MacBook Pro,14,Unknown,分期0利率 影音、平面設計、室內設計、編曲適合 M2 Pro MacBook Pro 14吋
+MacBook Air,13,Unknown,MacBook Air M2 13inch 256g 銀✨功能正常 新北面交
+MacBook Air,13,Unknown,Apple MacBook Air M2 2022
+MacBook Air,13,Unknown,Apple MacBook Air 13-inch M1
+MacBook Pro,16,Unknown,MacBook Pro 2019 16inch
+MacBook Pro,13,Unknown,MacBook Pro M3 黑色
+MacBook Pro,13,Unknown,MacBook Pro 2021
+MacBook Pro,13,Unknown,Apple MacBook Pro 13寸 i5 星空灰
+MacBook Air,13,Unknown,Macbook Air A1466 二手 文書機 追劇機
+MacBook Pro,15,Unknown,"Macbook pro 15"" 2018 (A1990)"
+MacBook Air,15,Unknown,2025 MacBook Air 15吋 512G全系列
+MacBook Pro,13,Unknown,"【售】Apple MacBook Pro (13-inch, 2017, Two Thunderbolt 3 ports)"
+MacBook Pro,13,Unknown,2017 MacBook pro
+MacBook Air,15,Unknown,MacBook air 2015
+MacBook Unknown,13,Unknown,【絕版收藏老物】APPLE MacBook 13.3吋 A1181 小白 CPU升級
+MacBook Pro,13,Unknown,Apple MacBook Pro 13'' ｜ 2020 太空灰
+MacBook Air,13,Unknown,2017 MacBook Air
+MacBook Air,13,Unknown,MacBook Air m1 256g 8g記憶體
+MacBook Air,13,Unknown,MacBook Air M1
+MacBook Air,13,Unknown,9成新 MacBook Air 13-inch A2337 共2台
+MacBook Air,13,Unknown,Apple MacBook Air M3 2024
+MacBook Air,13,Unknown,MacBook Air 13-inch A2337
+MacBook Air,13,Unknown,🚨 出售我的 MacBook Air M2 (午夜黑）
+MacBook Pro,13,Unknown,2018年MacBook Pro
+MacBook Air,13,Unknown,Touch ID 256G 2018 MacBook Air 13吋
+MacBook Air,13,Unknown,MacBook Air 13吋 256G
+MacBook Pro,13,Unknown,2017年MacBook pro
+MacBook Pro,13,Unknown,Apple 60W MagSafe 2 Power Adapter（配備 13 吋 Retina 顯示器的 MacBook Pro）
+MacBook Unknown,13,Unknown,Incase MacBook 13-14 經典筆電保護袋
+MacBook Air,15,Unknown,2015/2017 MacBook AIR
+MacBook Air,13,Unknown,2012 air/macbook pro 原廠專用SSD
+MacBook Unknown,Unknown,Unknown,MacBook VGA轉接器
+MacBook Air,13,Unknown,MacBook Air A1466 2013-2017 麥克風
+MacBook Unknown,Unknown,Unknown,MacBook
+MacBook Pro,13,Unknown,"Apple MacBook Pro 13"" 太空灰｜二手機"
+MacBook Air,13,Unknown,MacBook Air M2 13.6吋
+MacBook Pro,13,Unknown,#售 Mac book pro13吋 🔹品牌：Apple macbook pro 🔹有無盒裝配件：無 🔸出廠年份：2020 🔹處理器：2 GHz 四核心Intel Core i5
+MacBook Air,13,Unknown,賣保固內MacBook air m3
+MacBook Air,13,Unknown,【商品】：2024 Macbook Air M3 13吋 太空灰色 【商品狀況】：外觀跟新的一樣 機身可以說是無瑕疵，功能都正常 【配件】：原廠盒裝 充電器 插頭 【商品價格】：31000 【規格】
+MacBook Pro,14,Unknown,影音、平面設計、室內設計、編曲適合 M2 Pro MacBook Pro 14吋
+MacBook Air,15,Unknown,"Macbook air M2 15"""
+MacBook Air,13,Unknown,全新MacBook Air 13吋
+MacBook Air,13,Unknown,MacBook Air 13-inch A2337
+MacBook Air,13,Unknown,MacBook Air 13-inch M1（A2337）
+MacBook Air,13,Unknown,售Apple MacBook Air 尾牙抽到用不到故售出 1/13收到僅開封一次 9.9成新 限面交 可議價
+MacBook Air,13,Unknown,近全新 MacBook Air M3
+MacBook Air,13,Unknown,MacBook air 蘋果筆電
+MacBook Pro,14,Unknown,2014年末 Macbook Pro 15”Retina
+MacBook Air,13,Unknown,2025 Macbook Air 13吋 256G 全系列
+MacBook Unknown,15,Unknown,Riivan MacBook 15/16吋防震手提電腦包 深灰
+MacBook Air,13,Unknown,MacBook air
+MacBook Pro,13,Unknown,MacBook Pro Intel Core i5 (13inch)
+MacBook Unknown,Unknown,Unknown,Macbook m4
+MacBook Air,13,Unknown,MacBook Air M1 13吋 A2337
+MacBook Pro,13,Unknown,MacBook Pro M2 2022
+MacBook Air,13,Unknown,台中 賣 MacBook Air 星光 m2 2022
+MacBook Air,13,Unknown,MacBook Air 13 M3
+MacBook Pro,13,Unknown,MacBook Pro M2
+MacBook Air,13,Unknown,MacBook Air 13.6吋（M4晶片.10核心CPU與8核心GPU.16G記憶體.256G儲存空間）
+MacBook Pro,14,Unknown,Apple MACBOOK PRO M1 Pro 14吋
+MacBook Air,15,Unknown,"徵求 Macbook Air 15吋 一台 （ M3, M4 皆可 ）"
+MacBook Air,13,Unknown,MacBook Air
+MacBook Air,13,Unknown,Apple MacBook Air M2
+MacBook Air,13,Unknown,Apple MacBook Air M4 (天藍色）
+MacBook Air,13,Unknown,M4 MacBook Air 13吋
+MacBook Pro,14,Unknown,Macbook Pro 14” M3pro晶片 512G 太空黑
+MacBook Pro,13,Unknown,MacBook Pro M1晶片
+MacBook Air,13,Unknown,Macbook Air M2 256GB
+MacBook Air,13,Unknown,Macbook Air M3 512GB Midnight Blue
+MacBook Pro,13,Unknown,Macbook pro 13吋2015銀色
+MacBook Pro,14,Unknown,超新14 吋MacBook Pro M4 512G 16G銀色
+MacBook Air,13,Unknown,macbook air 2013
+MacBook Air,15,Unknown,Macbookair m3 15吋 太空灰 可用13吋16g的換
+MacBook Air,13,Unknown,MacBook Air M3 2024 A3113
+MacBook Air,13,Unknown,512容量 M1 CPU MacBook Air 13 玫瑰金
+MacBook Pro,16,Unknown,M1 超值客製款16G記憶體/512 ssd M1 2021 Macbook Pro 13
 MacBook Pro,14,Unknown,超值M1 Pro macbook 14吋
 MacBook Air,13,Unknown,超值現貨M1 CPU/16G記憶體/512G容量MacBook Air 13
-MacBook Pro,13,Unknown,Macbook pro M1 2020
-MacBook Air,13,Unknown,2025 Apple MacBook M4 Air 13”
-MacBook Pro,16,Unknown,超值 M1 Pro MacBook Pro retina 16吋
 MacBook Unknown,15,Unknown,15吋MacBook
 MacBook Pro,14,Unknown,M3 MacBook Pro 14寸
-MacBook Air,13,Unknown,M1 MacBook Air ￼外觀良好電池健康度正常￼￼￼
-MacBook Air,13,Unknown,Apple MacBook Air M2
 MacBook Air,13,Unknown,2020 MacBooks Air
 MacBook Air,13,Unknown,售MacBook Air m4
 MacBook Air,13,Unknown,🍎蘋果Macbook air M2
 MacBook Air,13,Unknown,Macbook air M1 2022年生產
-MacBook Pro,14,Unknown,Apple MACBOOK PRO M1 Pro 14吋
 MacBook Air,13,Unknown,售 Macbook Air M1 13吋
 MacBook Air,13,Unknown,2020 MacbookAir M1 配件齊全 循環次數超低 僅上班使用
 MacBook Air,13,Unknown,MacBook Air13(M3)
 MacBook Pro,15,Unknown,Macbook pro 15吋
 MacBook Unknown,Unknown,Unknown,MacBook M2晶片 8核 8GBRAM 256G.SSD
 MacBook Pro,13,Unknown,售macbook pro
-MacBook Air,13,Unknown,台中 賣 MacBook Air 星光 m2 2022
 MacBook Air,13,Unknown,MacBook air
 MacBook Pro,14,Unknown,MacBook Pro M3 14吋
 MacBook Air,13,Unknown,MacBookAir M1 A2337 512G
-MacBook Pro,15,Unknown,先誠信再成交🤝MacBook pro a1707 15.4吋 二手筆電💻 白幕些微淺影 Command鍵磨損 新北市土城區面交💯 寄送需全額匯🥹
 MacBook Air,13,Unknown,MacBook Air m1 收
 MacBook Pro,14,Unknown,9成9極新 Macbook Pro 14” M3 Pro
-MacBook Pro,14,Unknown,Macbook Pro 14” M3pro晶片 512G 太空黑
-MacBook Air,15,Unknown,"徵求 Macbook Air 15吋 一台 （ M3, M4 皆可 ）"
 MacBook Air,13,Unknown,MacBook AIR 13-inch太空灰 筆記型電腦
 MacBook Air,13,Unknown,MacBook Air A1466
 MacBook Air,13,Unknown,Macbook Air 13inch 2017
@@ -93,146 +307,59 @@ MacBook Air,13,Unknown,🍎蘋果Apple macbook air M1 2020年版～附原盒
 MacBook Air,13,Unknown,【出售】：2023 Apple MacBook Air M2
 MacBook Unknown,16,Unknown,16吋 MacBook Intel 2019
 MacBook Air,13,Unknown,MacBook air
-MacBook Air,13,Unknown,Apple MacBook Air M3
 MacBook Air,13,Unknown,徵 MacBook Air 13.6 m2 太空灰
 MacBook Air,13,Unknown,售 macbook air 銀色
-MacBook Pro,13,Unknown,MacBook Pro M1 13
-MacBook Pro,13,Unknown,超值2020 MacBook Pro retina 13
-MacBook Pro,14,Unknown,Macbook Pro 14吋 M1Pro 配件多
-MacBook Pro,13,Unknown,Macbook pro m1
-MacBook Air,13,Unknown,MacBook Air M1
-MacBook Unknown,Unknown,Unknown,MacBook M1 2020
-MacBook Pro,13,Unknown,MacBook Pro(13英吋，2019）
-MacBook Pro,13,Unknown,MacBook Pro 2020
-MacBook Pro,13,Unknown,Apple Macbook Pro 13” 2015
-MacBook Pro,16,Unknown,2016 Macbook PRO 13吋 A1502
-MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 1TB
 MacBook Air,13,Unknown,Macbook Air M3 256gb 極少使用保固中到10月8號
 MacBook Pro,13,Unknown,Macbook pro 512g 有盒
-MacBook Pro,13,Unknown,售MacBook Pro 512G 盒在
-MacBook Air,13,Unknown,MacBook Air M3 2024 A3113
-MacBook Air,15,Unknown,MacBook Air M2 15吋
-MacBook Pro,14,Unknown,MacBook pro 14’ M1 Pro
-MacBook Pro,13,Unknown,MacBooks pro 2020
-MacBook Air,13,Unknown,MacBook Air M2 (13.6吋)
-MacBook Pro,15,Unknown,Macbook PRO 15吋 2019 i7 256G
-MacBook Pro,13,Unknown,售 2018 MacBook pro
-MacBook Pro,16,Unknown,MacBook Pro 2016 暗屏 需外接HDMI OS Monterey
-MacBook Air,15,Unknown,誠收 Macbook air m2 15吋
-MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB
-MacBook Air,13,Unknown,13.6吋（2022年 M2）MacBook Air 256G-午夜色
-MacBook Pro,13,Unknown,Macbook Pro 13吋 2018
 MacBook Air,13,Unknown,MacBook Air 13吋 M3
-MacBook Pro,13,Unknown,"Apple MacBook Pro 13吋,M2,2022"
-MacBook Pro,15,Unknown,先誠信再成交🤝MacBook pro a1707 15.4吋 二手筆電💻 白幕些微淺影 Command鍵磨損 新北市土城區面交💯 寄送需全額匯🥹
-MacBook Pro,16,Unknown,2021 MacBook Pro M1 16寸 512GB
-MacBook Pro,14,Unknown,‼️超級新‼️售太空灰 MacBook Pro 14--inch M3 ❤️
-MacBook Pro,14,Unknown,徵求 MacBook Pro14吋 M4 台灣蘋果公司貨 盒裝原廠配件齊全 雙北面交
-MacBook Pro,16,Unknown,apple MacBook Pro 256GB 灰2016
-MacBook Pro,13,Unknown,Mac MacBook Pro A1708 2018 二手筆記型電腦
-MacBook Pro,13,Unknown,Apple MacBook pro i5 2.7 13吋
-MacBook Pro,13,Unknown,MacBook Pro M1 (late 2020) 13英吋
-MacBook Pro,16,Unknown,Macbook pro 16吋M3 Pro 18GB 1TB
-MacBook Air,13,Unknown,[今天面交再打折］Apple MacBook Air 2020 Retina 蘋果輕薄筆電 太空灰
-MacBook Air,13,Unknown,"MacBook Air (13 英吋, 2013年中) 充電器全新 蘋果筆電"
-MacBook Air,15,Unknown,MacBook Air 15 A2941 星光色
-MacBook Pro,13,Unknown,MacBook Pro 2020 512G 16G出售｜台北嘉義可面交｜原廠配件皆在｜電池健康
-MacBook Pro,14,Unknown,售MacBook Pro 14
-MacBook Air,13,Unknown,Macbook Air 美版（A1932）
-MacBook Pro,14,Unknown,【售】電池100% MacBook Pro 14吋 M3 Pro / 18GB / 512G / 銀
-MacBook Pro,16,Unknown,升級售出 MacBook Pro 2016（TouchBar款）
 MacBook Air,13,Unknown,Macbook Air 13寸
-MacBook Pro,14,Unknown,2014年末 Macbook Pro 15”Retina
-MacBook Pro,13,Unknown,2017 13吋MacBook Pro intel Core i5晶片 太空灰
-MacBook Unknown,Unknown,Unknown,Macbook m4
-MacBook Air,13,Unknown,MacBook Air M1 13吋 A2337
-MacBook Air,13,Unknown,MacBook Air 13 M3
-MacBook Pro,13,Unknown,MacBook Pro M2
-MacBook Air,13,Unknown,Apple MacBook Air M4 (天藍色）
-MacBook Air,13,Unknown,MacBook Air 13.6吋（M4晶片.10核心CPU與8核心GPU.16G記憶體.256G儲存空間）
-MacBook Air,13,Unknown,M4 MacBook Air 13吋
-MacBook Pro,13,Unknown,MacBook Pro M1晶片
 MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB
 MacBook Pro,15,Unknown,"MacBook Pro (15-inch, 2017)"
-MacBook Pro,13,Unknown,"Apple MacBook Pro 13吋,M2,2022"
 MacBook Pro,14,Unknown,Macbook Pro 14吋 M4太空黑全新未拆配件多
-MacBook Pro,14,Unknown,全新未拆 客製36記憶體/1TB SSD M3 Pro 晶片 MacBook Pro retina 14吋
 MacBook Pro,13,Unknown,Apple Macbook Pro M3pro 18g記憶體 512G(太空黑）14吋-雙北面交
-MacBook Pro,16,Unknown,Apple MacBook Pro M3晶片 16吋 黑色 2023 價格可議
-MacBook Pro,16,Unknown,MacBook Pro 16inch M4 Max 14C32G 36G 1TB 2024 全新機
-MacBook Pro,13,Unknown,MacBook Pro 13.3吋 2015
 MacBook Pro,14,Unknown,Macbook pro 14吋 m1 pro
 MacBook Pro,16,Unknown,Apple Macbook Pro 16吋 32GB記憶體版本
-MacBook Pro,14,Unknown,【售】MacBook Pro 14吋 M3 Pro / 18GB / 512G / 銀
-MacBook Pro,13,Unknown,MacBook Pro M2 2022
 MacBook Pro,14,Unknown,14 吋 MacBook Pro
 MacBook Pro,16,Unknown,MacBook Pro 16吋（M2 pro）
 MacBook Pro,14,Unknown,歡迎出價MacBook Pro 14” M3 MAX/14C CPU/30C GPU/36GB/2TB/銀色/包裝完整/二手保固中
 MacBook Pro,13,Unknown,MacBook Pro 年份2023-2024
 MacBook Pro,13,Unknown,🔥Macbookpro A1989 Touch Bar系列🔥
-MacBook Air,13,Unknown,「保固兩年」MacBook Air M4 2025 256G 僅使用幾次 幾乎全新 台北實體門市 可面交 蘋果筆記型電腦 二手筆電
 MacBook Pro,13,Unknown,MacBook Pro
 MacBook Retina,12,Unknown,Apple MacBook 蘋果筆記型電腦 A1534 2018 玫瑰金 二手
 MacBook Pro,15,Unknown,MacBook Pro A1502
 MacBook Pro,13,Unknown,出售 MacBook Pro 2017
-MacBook Pro,13,Unknown,MacBook Pro A1708 512GB SSD硬碟
-MacBook Pro,13,Unknown,蘋果原廠 升級用硬碟，M.2 SSD 512G A1398 A1502 macbook pro 免運寄出，7-11貨到付款
 MacBook Air,13,Unknown,MacBook Pro A1466 零件機
 MacBook Pro,13,Unknown,MacBook pro A1278一批
 MacBook Air,13,Unknown,￼【UNIQ】Macbook Air/Pro 13吋 磁吸筆電保護套(DFender)｜筆電套 時尚緩衝 綠
-MacBook Pro,14,Unknown,影音、平面設計、室內設計、編曲適合 高階版本M2 Pro MacBook Pro 14吋 1TB SSD
 MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB
 MacBook Pro,16,Unknown,難得釋出M1 超香客製款16G記憶體256 ssd M1 2021 Macbook Pro 13
-MacBook Pro,13,Unknown,MacBook Pro 13吋 Touch Bar 2016 $8500 功能都正常 雙北可面交
-MacBook Pro,14,Unknown,超值 32G記憶體M1 Pro MacBook 14吋
-MacBook Pro,16,Unknown,M3 max MacBook Pro 16寸
 MacBook Pro,13,Unknown,Macbookpro 2019
 MacBook Pro,13,Unknown,MacBook Pro m3pro 18G 512GB 14寸 二手99%全新 可議價
 MacBook Pro,13,Unknown,二手筆電macbook pro 2020（touch bar)
 MacBook Pro,15,Unknown,MacBook Pro 15 英寸，2017 銀色
-MacBook Pro,14,Unknown,❤️‼️售MacBook Pro 14--inch M3 近全新割愛❤️
-MacBook Pro,13,Unknown,[售]MacBook pro 13吋Touch Bar A2159 灰
-MacBook Pro,13,Unknown,MacBook Pro M1
-MacBook Air,15,Unknown,保固中 MacBook Air 15吋 M3｜電池健康度 100%
 MacBook Pro,15,Unknown,售 macbook pro 2018 15吋
-MacBook Air,13,Unknown,MacBook Air 13-inch M1（A2337）
 MacBook Pro,15,Unknown,MacBook Pro 15吋 2017年 A1707
 MacBook Air,13,Unknown,Macbook air 2019 13吋
-MacBook Pro,13,Unknown,超值入門 2017 MacBook Pro retina 13
 MacBook Pro,13,Unknown,MacbookPro I5 科技銀 a1708 2017 電池可用一~二小D
-MacBook Pro,13,Unknown,MacBook Pro Intel Core i5 (13inch)
 MacBook Pro,13,Unknown,Apple macbook pro Intel i5 A1706 機況詳見說明
 MacBook Air,13,Unknown,MacBook Air 2014
 MacBook Pro,15,Unknown,Macbook pro 2015 保護硬殼+（二手）
 MacBook Pro,16,Unknown,徵 MACBOOK PRO M3 16吋
 MacBook Pro,15,Unknown,"MacBook Pro 15"" Late 2011 [Core i7-2.2 GHz]"
-MacBook Unknown,Unknown,Unknown,Magsafe Macbook Charger
-MacBook Pro,13,Unknown,電腦MacBook pro 2018 19 便宜出售
 MacBook Pro,14,Unknown,Macbook pro 14吋 M3Max 36G+1TB 14+30核 黑色
-MacBook Pro,13,Unknown,【蘋果最後的旗艦】蘋果 Apple MacBook Pro 2012 蘋果筆電 已升級滿血 銀色
-MacBook Pro,13,Unknown,MacBook Pro 13吋 (A1708)
 MacBook Pro,13,Unknown,售 MacBook Pro 13吋 年份2015年有明顯使用痕跡功能一切正常
 MacBook Pro,14,Unknown,MacBook Pro M1 Pro 14” 銀色
-MacBook Pro,16,Unknown,賣MacBook pro m2pro 16寸
 MacBook Pro,13,Unknown,MacBook Pro 13吋
 MacBook Pro,13,Unknown,Macbook pro M1 2020年 500G空間 8G記憶體
-MacBook Pro,13,Unknown,Apple Macbook pro 13吋 銀色 2020年
 MacBook Pro,13,Unknown,#售 Mac book pro13吋 🔹品牌：Apple macbook pro 🔹有無盒裝配件：無 🔸出廠年份：2020 🔹處理器：2 GHz 四核心Intel Core i5
 MacBook Air,13,Unknown,Apple MacBook Air M2
 MacBook Pro,13,Unknown,全新MacBook Pro 未拆封 未啟用保固 外盒無損
-MacBook Pro,13,Unknown,MacBook Pro（13 英寸，M2，2022 年）
 MacBook Air,13,Unknown,MacBook Air 售
-MacBook Air,13,Unknown,Apple macbook air M4 512GB
-MacBook Pro,16,Unknown,32G記憶體 I9 八核心 MacBook Pro 16吋 1TB SSD 容量
 MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 1TB
 MacBook Pro,15,Unknown,售2020年生產，macbook pro a2159帶touch bar
 MacBook Air,13,Unknown,Apple Macbook air m1 電池循環31次 跟新機差不多
-MacBook Pro,14,Unknown,（售）2014年末 Macbook Pro 15”Retina
 MacBook Air,13,Unknown,2019 MacBook Air
 MacBook Air,15,Unknown,MacBook Air 2015
 MacBook Unknown,Unknown,Unknown,Paralles desktop 20 在 macos 上用 arm架構版本的 windows 一年內可更新到最新 過期後該版本變終身 Macbook 軟體 應用程式
 MacBook Air,13,Unknown,MacBook Air M2
-MacBook Pro,14,Unknown,剪輯猛獸 全機包膜保固還有330幾天 M3 max 36G/1TB SSD MacBook Pro 14吋
 MacBook Pro,16,Unknown,🔥蘋果MacBook Pro A1708 I7七代 高效能筆電 搭配8G記憶體+256G SSD+Retina螢幕(2560*1600)🔥
-MacBook Pro,14,Unknown,Macbook pro 14吋M3 Pro 18GB 512GB 98%
-MacBook Air,13,Unknown,全新出清 MacBook Air 512GB

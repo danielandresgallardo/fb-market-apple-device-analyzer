@@ -45,7 +45,7 @@ def extract_apple_model(title):
     # === Filter out accessories and unrelated products ===
     excluded_keywords = [
         "keyboard", "鍵盤", "watch", "apple watch", "pencil",
-        "巧控", "滑鼠", "mouse", "trackpad", "妙控", "耳機", "airpods"
+        "巧控", "滑鼠", "mouse", "trackpad", "妙控", "耳機", "airpods", "鍵", "保護殼"
     ]
     if any(kw in title for kw in excluded_keywords):
         return "Not Apple Computer", None, None
@@ -70,80 +70,85 @@ def extract_apple_model(title):
 
         processor_match = re.search(r"m\s*([1234])", title)
         processor = f"M{processor_match.group(1)}" if processor_match else "Unknown"
-
         return model, processor, screen
 
-    # === MacBook Detection (your original code) ===
-    if "macbook" not in title:
-        return "Not Apple Device", None, None
+    # === Other Macs (Mac mini, iMac, Mac Studio) ===
+    if "mac mini" in title:
+        model = "Mac mini"
+    elif "mac studio" in title:
+        model = "Mac Studio"
+    elif "imac" in title:
+        model = "iMac"
+    elif "macbook" in title:
+        model = None  # handled below
+    else:
+        return "Not Apple Computer", None, None
 
-    is_air = "air" in title
-    is_pro = "pro" in title
-
-    # === Extract processor (M1–M4, Pro/Max/Ultra) ===
+    # === Extract processor (M1–M4, Pro/Max/Ultra, Intel) ===
     processor_match = re.search(r"m\s*([1234])\s*(pro|max|ultra)?", title)
     processor = None
     if processor_match:
         base = f"M{processor_match.group(1)}"
         variant = processor_match.group(2)
-        if variant:
-            processor = f"{base}{variant.capitalize()}"
-        else:
-            processor = base
+        processor = f"{base}{variant.capitalize()}" if variant else base
     else:
         intel_match = re.search(r"\bi[3579]\b", title)
         if intel_match:
             processor = f"Intel {intel_match.group(0)}"
+        else:
+            processor = "Unknown"
 
-    # === Extract screen size ===
-    screen_match = re.search(r"(11|12|13|14|15|16)(\.\d)?\s*(吋|inch|\"|”)?", title)
+    # === Screen size ===
+    screen_match = re.search(r"(11|12|13|14|15|16|21\.5|24|27|30)(\.\d)?\s*(吋|inch|\"|”)?", title)
     screen = screen_match.group(1) if screen_match else "Unknown"
 
-    # === Check for known model numbers ===
-    model_map = {
-        "a1466": ("MacBook Air", "13"),
-        "a1932": ("MacBook Air", "13"),
-        "a2179": ("MacBook Air", "13"),
-        "a2337": ("MacBook Air", "13"),  # M1 Air
-        "a2681": ("MacBook Air", "13"),  # M2 Air
-        "a3113": ("MacBook Air", "13"),  # M3 Air
-        "a1534": ("MacBook Retina", "12"),  # Retina 12"
-        "a1989": ("MacBook Pro", "13"),
-        "a1990": ("MacBook Pro", "15"),
-        "a2251": ("MacBook Pro", "13"),
-        "a2141": ("MacBook Pro", "16"),
-        "a2442": ("MacBook Pro", "14"),
-        "a2485": ("MacBook Pro", "16"),
-        "a2780": ("MacBook Pro", "14"),
-        "a2786": ("MacBook Pro", "16"),
-    }
+    # === MacBook model fallback ===
+    if "macbook" in title:
+        is_air = "air" in title
+        is_pro = "pro" in title
 
-    model_number_match = re.search(r"a\d{4}", title)
-    if model_number_match:
-        code = model_number_match.group(0)
-        if code in model_map:
-            model, model_screen = model_map[code]
-            screen = model_screen  # override size
-            return model, processor or "Unknown", screen
+        model_map = {
+            "a1466": ("MacBook Air", "13"),
+            "a1932": ("MacBook Air", "13"),
+            "a2179": ("MacBook Air", "13"),
+            "a2337": ("MacBook Air", "13"),  # M1 Air
+            "a2681": ("MacBook Air", "13"),  # M2 Air
+            "a3113": ("MacBook Air", "13"),  # M3 Air
+            "a1534": ("MacBook Retina", "12"),
+            "a1989": ("MacBook Pro", "13"),
+            "a1990": ("MacBook Pro", "15"),
+            "a2251": ("MacBook Pro", "13"),
+            "a2141": ("MacBook Pro", "16"),
+            "a2442": ("MacBook Pro", "14"),
+            "a2485": ("MacBook Pro", "16"),
+            "a2780": ("MacBook Pro", "14"),
+            "a2786": ("MacBook Pro", "16"),
+        }
 
-    # === Heuristic cleanup ===
-    if is_air:
-        # Remove false 12" for M1/M2 Air (common scraping error)
-        if processor and screen == "12":
-            screen = "13"
-        if screen not in ["13", "15"]:
-            screen = "13"  # fallback
-        return "MacBook Air", processor or "Unknown", screen
+        model_number_match = re.search(r"a\d{4}", title)
+        if model_number_match:
+            code = model_number_match.group(0)
+            if code in model_map:
+                model, model_screen = model_map[code]
+                screen = model_screen
+                return model, processor, screen
 
-    if is_pro:
-        if screen not in ["13", "14", "15", "16"]:
-            screen = "13"  # default to smallest Pro
-        return "MacBook Pro", processor or "Unknown", screen
+        if is_air:
+            if processor and screen == "12":
+                screen = "13"
+            if screen not in ["13", "15"]:
+                screen = "13"
+            return "MacBook Air", processor, screen
+        if is_pro:
+            if screen not in ["13", "14", "15", "16"]:
+                screen = "13"
+            return "MacBook Pro", processor, screen
+        if "retina" in title and screen == "12":
+            return "MacBook Retina", processor, screen
+        return "MacBook Unknown", processor, screen
 
-    if "retina" in title and screen == "12":
-        return "MacBook Retina", processor or "Intel", screen
-
-    return "MacBook Unknown", processor or "Unknown", screen
+    # === iMac or Mac mini/Studio ===
+    return model, processor, screen
 
 def extract_storage(title):
     title = title.lower()
