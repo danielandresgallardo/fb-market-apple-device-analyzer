@@ -108,6 +108,7 @@ def extract_apple_model(title):
         is_pro = "pro" in title
 
         model_map = {
+            "a1465": ("MacBook Air", "11"),
             "a1466": ("MacBook Air", "13"),
             "a1932": ("MacBook Air", "13"),
             "a2179": ("MacBook Air", "13"),
@@ -136,7 +137,9 @@ def extract_apple_model(title):
         if is_air:
             if processor and screen == "12":
                 screen = "13"
-            if screen not in ["13", "15"]:
+            if re.search(r"\b11\s*(吋|inch|\"|”)?", title):
+                screen = "11"
+            if screen not in ["11", "13", "15"]:
                 screen = "13"
             return "MacBook Air", processor, screen
         if is_pro:
