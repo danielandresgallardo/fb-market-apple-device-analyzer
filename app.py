@@ -38,10 +38,44 @@ for filename in os.listdir(data_dir):
 print(f"Loaded {len(all_data)} listings from {data_dir}")
 
 # === Extraction Functions ===
-def extract_macbook_model(title):
+
+def extract_apple_model(title):
     title = title.lower()
+
+    # === Filter out accessories and unrelated products ===
+    excluded_keywords = [
+        "keyboard", "鍵盤", "watch", "apple watch", "pencil",
+        "巧控", "滑鼠", "mouse", "trackpad", "妙控", "耳機", "airpods"
+    ]
+    if any(kw in title for kw in excluded_keywords):
+        return "Not Apple Computer", None, None
+
+    # === iPad Detection ===
+    if "ipad" in title:
+        if "mini" in title:
+            model = "iPad Mini"
+            screen = "8.3"
+        elif "pro" in title:
+            model = "iPad Pro"
+        elif "air" in title:
+            model = "iPad Air"
+        else:
+            model = "iPad"
+
+        screen_match = re.search(r"(8\.3|10\.9|11|12\.9|13)(吋|inch|\"|”)?", title)
+        if screen_match:
+            screen = screen_match.group(1)
+        elif model != "iPad Mini":
+            screen = "Unknown"
+
+        processor_match = re.search(r"m\s*([1234])", title)
+        processor = f"M{processor_match.group(1)}" if processor_match else "Unknown"
+
+        return model, processor, screen
+
+    # === MacBook Detection (your original code) ===
     if "macbook" not in title:
-        return "Not MacBook", None, None
+        return "Not Apple Device", None, None
 
     is_air = "air" in title
     is_pro = "pro" in title
@@ -156,7 +190,7 @@ def parse_price(price_str):
 
 # === Normalize and Filter ===
 for item in all_data:
-    model, processor, screen_size = extract_macbook_model(item["title"])
+    model, processor, screen_size = extract_apple_model(item["title"])
     item["model"] = model
     item["processor"] = processor
     item["screen_size"] = screen_size
@@ -187,8 +221,8 @@ summary = df_clean.groupby(["model", "processor", "screen_size", "ram", "storage
 
 # === Save Clean Data ===
 df_clean = df_clean.drop(columns=["link"])
-df_clean.to_csv(os.path.join(output_data_dir, "macbook_data_clean.csv"), index=False)
-summary.to_csv(os.path.join(output_data_dir, "macbook_summary_stats.csv"), index=False)
+df_clean.to_csv(os.path.join(output_data_dir, "apple_devices_data_clean.csv"), index=False)
+summary.to_csv(os.path.join(output_data_dir, "apple_devices_summary_stats.csv"), index=False)
 
 # === Save Unknown Processor Listings ===
 unknown_processors = df[
@@ -211,10 +245,10 @@ unknown_ram.to_csv(os.path.join(output_data_dir, "unknown_ram.csv"), index=False
 # === Export Unknown Model Listings ===
 unknown_model_df = df[df["model"] == "MacBook Unknown"]
 unknown_model_df[["model", "screen_size", "ram", "storage", "title"]].to_csv(
-    os.path.join(output_data_dir, "macbook_unknown_model.csv"),
+    os.path.join(output_data_dir, "unknown_apple_model.csv"),
     index=False
 )
-print(f"Saved {len(unknown_model_df)} unknown model listings to macbook_unknown_model.csv")
+print(f"Saved {len(unknown_model_df)} unknown model listings to unknown_apple_model.csv")
 
 # === Save Unknown Screen Size Listings ===
 unknown_screen_size = df[
@@ -225,8 +259,8 @@ print(f"Saved {len(unknown_screen_size)} unknown screen size listings to unknown
 
 # === Save Full Verification File ===
 verification_cols = ["model", "processor", "screen_size", "storage", "ram", "title"]
-df[verification_cols].to_csv(os.path.join(output_data_dir, "macbook_verification.csv"), index=False)
-print(f"Saved verification file with {len(df)} listings to macbook_verification.csv")
+df[verification_cols].to_csv(os.path.join(output_data_dir, "apple_devices_verification.csv"), index=False)
+print(f"Saved verification file with {len(df)} listings to apple_devices_verification.csv")
 
 # === Visualization ===
 sns.set(style="whitegrid")
@@ -235,20 +269,20 @@ sns.set(style="whitegrid")
 plt.figure(figsize=(16, 10))
 sns.boxplot(data=df_clean, x="model", y="price_num", hue="ram")
 plt.xticks(rotation=45)
-plt.title("Price Distribution by MacBook Model and RAM")
+plt.title("Price Distribution by Apple Device Model and RAM")
 plt.ylabel("Price (NTD)")
 plt.tight_layout()
-plt.savefig(os.path.join(output_plots_dir, "macbook_boxplot.png"))
+plt.savefig(os.path.join(output_plots_dir, "apple_devices_boxplot.png"))
 plt.close()
 
 # Histogram
 plt.figure(figsize=(16, 10))
 sns.histplot(df_clean["price_num"], bins=30, kde=True)
-plt.title("Histogram of MacBook Listing Prices")
+plt.title("Histogram of Apple Device Listing Prices")
 plt.xlabel("Price (NTD)")
 plt.tight_layout()
-plt.savefig(os.path.join(output_plots_dir, "macbook_price_histogram.png"))
+plt.savefig(os.path.join(output_plots_dir, "apple_devices_price_histogram.png"))
 plt.close()
 
-print(f"Saved {len(df_clean)} MacBook listings to macbook_data_clean.csv")
-print(f"Saved summary to macbook_summary_stats.csv")
+print(f"Saved {len(df_clean)} Apple device listings to apple_devices_data_clean.csv")
+print(f"Saved summary to apple_devices_summary_stats.csv")
