@@ -153,6 +153,12 @@ def extract_apple_model(title):
     # === iMac or Mac mini/Studio ===
     return model, processor, screen
 
+def extract_combo(title):
+    match = re.search(r"(8|16|24|32|64|96|128)\s*[\+/]\s*(256|512|1024|2048)", title.lower())
+    if match:
+        return int(match.group(1)), int(match.group(2))
+    return None, None
+
 def extract_storage(title):
     title = title.lower()
     match = re.search(r"\b(256|512|1024|2048|4096)\s*(g|gb|t|tb)?\b", title)
@@ -201,9 +207,10 @@ for item in all_data:
     model, processor, screen_size = extract_apple_model(item["title"])
     item["model"] = model
     item["processor"] = processor
-    item["screen_size"] = screen_size
-    item["storage"] = extract_storage(item["title"])
-    item["ram"] = extract_ram(item["title"])
+    item["screen_size"] = screen_size    
+    ram, storage = extract_combo(item["title"])
+    item["storage"] = storage if storage is not None else extract_storage(item["title"])
+    item["ram"] = ram if ram is not None else extract_ram(item["title"])
     item["warranty"] = extract_warranty(item["title"])
     item["price_num"] = parse_price(item["price"])
 
