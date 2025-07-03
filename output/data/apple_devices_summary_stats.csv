@@ -14,11 +14,12 @@ MacBook Air,M1,13,16,512,Unknown,3,20000,23000,21000.0
 MacBook Air,M1,13,16,Unknown,Unknown,2,24000,25000,24500.0
 MacBook Air,M1,13,Unknown,256,Unknown,1,999999,999999,999999.0
 MacBook Air,M1,13,Unknown,512,Unknown,1,13000,13000,13000.0
-MacBook Air,M1,13,Unknown,Unknown,AppleCare,2,13800,13900,13850.0
+MacBook Air,M1,13,Unknown,Unknown,AppleCare+,2,13800,13900,13850.0
 MacBook Air,M1,13,Unknown,Unknown,Unknown,22,11900,18500,15018.09090909091
-MacBook Air,M2,13,8,256,Unknown,15,16800,32000,19393.333333333332
+MacBook Air,M2,13,8,256,In Warranty,1,22000,22000,22000.0
+MacBook Air,M2,13,8,256,Unknown,14,16800,32000,19207.14285714286
 MacBook Air,M2,13,8,512,Unknown,5,19000,25900,20940.0
-MacBook Air,M2,13,8,Unknown,Unknown,1,22000,22000,22000.0
+MacBook Air,M2,13,8,Unknown,In Warranty,1,22000,22000,22000.0
 MacBook Air,M2,13,16,256,Unknown,4,22000,28500,24125.0
 MacBook Air,M2,13,16,512,Unknown,2,24000,24000,24000.0
 MacBook Air,M2,13,16,Unknown,Unknown,3,18000,26000,22666.666666666668
@@ -30,32 +31,37 @@ MacBook Air,M2,13,Unknown,Unknown,Unknown,22,15000,34500,23763.636363636364
 MacBook Air,M2,15,8,512,Unknown,1,22800,22800,22800.0
 MacBook Air,M2,15,16,Unknown,Unknown,1,33000,33000,33000.0
 MacBook Air,M2,15,Unknown,Unknown,Unknown,3,21500,81000,44500.0
-MacBook Air,M3,13,8,256,Unknown,5,23500,27500,25000.0
+MacBook Air,M3,13,8,256,In Warranty,1,23500,23500,23500.0
+MacBook Air,M3,13,8,256,Unknown,4,24000,27500,25375.0
 MacBook Air,M3,13,8,Unknown,Unknown,2,24000,28000,26000.0
-MacBook Air,M3,13,16,256,Unknown,8,25900,38000,28550.0
-MacBook Air,M3,13,16,512,Unknown,7,27000,36000,32042.85714285714
-MacBook Air,M3,13,24,512,Unknown,1,38500,38500,38500.0
+MacBook Air,M3,13,16,256,In Warranty,1,26900,26900,26900.0
+MacBook Air,M3,13,16,256,Unknown,7,25900,38000,28785.714285714286
+MacBook Air,M3,13,16,512,In Warranty,4,28800,35000,31575.0
+MacBook Air,M3,13,16,512,Unknown,3,27000,36000,32666.666666666668
+MacBook Air,M3,13,24,512,In Warranty,1,38500,38500,38500.0
 MacBook Air,M3,13,24,Unknown,Unknown,3,36000,45000,40000.0
-MacBook Air,M3,13,Unknown,256,In Warranty,1,23000,23000,23000.0
-MacBook Air,M3,13,Unknown,256,Unknown,1,26499,26499,26499.0
+MacBook Air,M3,13,Unknown,256,In Warranty,2,23000,26499,24749.5
 MacBook Air,M3,13,Unknown,512,Unknown,2,26000,38000,32000.0
-MacBook Air,M3,13,Unknown,Unknown,In Warranty,1,28000,28000,28000.0
-MacBook Air,M3,13,Unknown,Unknown,Unknown,15,21500,48000,29393.333333333332
-MacBook Air,M3,15,8,256,Unknown,2,26000,30000,28000.0
-MacBook Air,M3,15,8,512,Unknown,1,28000,28000,28000.0
+MacBook Air,M3,13,Unknown,Unknown,In Warranty,2,27900,28000,27950.0
+MacBook Air,M3,13,Unknown,Unknown,Unknown,14,21500,48000,29500.0
+MacBook Air,M3,15,8,256,In Warranty,1,30000,30000,30000.0
+MacBook Air,M3,15,8,256,Unknown,1,26000,26000,26000.0
+MacBook Air,M3,15,8,512,In Warranty,1,28000,28000,28000.0
 MacBook Air,M3,15,16,256,Unknown,1,33000,33000,33000.0
 MacBook Air,M3,15,16,512,Unknown,1,39000,39000,39000.0
 MacBook Air,M3,15,16,Unknown,Unknown,1,33000,33000,33000.0
 MacBook Air,M3,15,24,512,Unknown,1,47000,47000,47000.0
-MacBook Air,M3,15,Unknown,Unknown,Unknown,3,29000,40000,35833.333333333336
+MacBook Air,M3,15,Unknown,Unknown,In Warranty,1,38500,38500,38500.0
+MacBook Air,M3,15,Unknown,Unknown,Unknown,2,29000,40000,34500.0
 MacBook Air,M4,13,4,Unknown,Unknown,1,3000,3000,3000.0
 MacBook Air,M4,13,8,256,Unknown,1,31000,31000,31000.0
 MacBook Air,M4,13,16,256,Unknown,4,30800,33000,31802.5
 MacBook Air,M4,13,16,512,Unknown,1,38500,38500,38500.0
-MacBook Air,M4,13,16,Unknown,Unknown,1,30850,30850,30850.0
+MacBook Air,M4,13,16,Unknown,In Warranty,1,30850,30850,30850.0
 MacBook Air,M4,13,24,512,Unknown,1,44000,44000,44000.0
 MacBook Air,M4,13,32,Unknown,Unknown,1,54800,54800,54800.0
-MacBook Air,M4,13,Unknown,256,Unknown,2,32000,36500,34250.0
+MacBook Air,M4,13,Unknown,256,In Warranty,1,32000,32000,32000.0
+MacBook Air,M4,13,Unknown,256,Unknown,1,36500,36500,36500.0
 MacBook Air,M4,13,Unknown,512,Unknown,1,41000,41000,41000.0
 MacBook Air,M4,13,Unknown,Unknown,Unknown,6,27500,31500,29833.333333333332
 MacBook Air,M4,15,16,256,Unknown,2,37710,38000,37855.0
@@ -122,7 +128,8 @@ MacBook Pro,M1Pro,14,16,512,In Warranty,1,34000,34000,34000.0
 MacBook Pro,M1Pro,14,16,Unknown,Unknown,4,34000,36000,34750.0
 MacBook Pro,M1Pro,14,32,512,Unknown,1,36000,36000,36000.0
 MacBook Pro,M1Pro,14,32,Unknown,Unknown,5,34500,39000,35900.0
-MacBook Pro,M1Pro,14,Unknown,Unknown,Unknown,10,20000,38000,29560.0
+MacBook Pro,M1Pro,14,Unknown,Unknown,In Warranty,1,29000,29000,29000.0
+MacBook Pro,M1Pro,14,Unknown,Unknown,Unknown,9,20000,38000,29622.222222222223
 MacBook Pro,M1Pro,16,16,512,Unknown,3,28000,33210,30070.0
 MacBook Pro,M1Pro,16,16,Unknown,AppleCare,2,34000,36500,35250.0
 MacBook Pro,M1Pro,16,16,Unknown,Unknown,2,31000,48000,39500.0
@@ -149,9 +156,10 @@ MacBook Pro,M3,14,8,512,Unknown,3,30000,38000,34333.333333333336
 MacBook Pro,M3,14,Unknown,Unknown,In Warranty,1,54000,54000,54000.0
 MacBook Pro,M3,14,Unknown,Unknown,Unknown,4,35000,65000,49500.0
 MacBook Pro,M3,16,Unknown,Unknown,Unknown,3,66000,99999,81666.33333333333
-MacBook Pro,M3Max,13,Unknown,Unknown,Unknown,1,76000,76000,76000.0
+MacBook Pro,M3Max,13,Unknown,Unknown,In Warranty,1,76000,76000,76000.0
 MacBook Pro,M3Max,14,64,512,Unknown,1,116000,116000,116000.0
-MacBook Pro,M3Max,14,Unknown,Unknown,Unknown,2,76000,76000,76000.0
+MacBook Pro,M3Max,14,Unknown,Unknown,In Warranty,1,76000,76000,76000.0
+MacBook Pro,M3Max,14,Unknown,Unknown,Unknown,1,76000,76000,76000.0
 MacBook Pro,M3Max,16,16,Unknown,Unknown,1,79999,79999,79999.0
 MacBook Pro,M3Max,16,Unknown,Unknown,Unknown,1,98000,98000,98000.0
 MacBook Pro,M3Pro,13,Unknown,512,Unknown,2,43500,60000,51750.0
@@ -170,7 +178,7 @@ MacBook Pro,M4,14,Unknown,Unknown,Unknown,2,88,46800,23444.0
 MacBook Pro,M4,16,16,512,Unknown,1,45800,45800,45800.0
 MacBook Pro,M4Max,14,128,Unknown,Unknown,1,160000,160000,160000.0
 MacBook Pro,M4Max,16,Unknown,Unknown,Unknown,1,107950,107950,107950.0
-MacBook Pro,M4Pro,13,24,512,Unknown,1,62000,62000,62000.0
+MacBook Pro,M4Pro,13,24,512,In Warranty,1,62000,62000,62000.0
 MacBook Pro,M4Pro,13,Unknown,Unknown,Unknown,1,79000,79000,79000.0
 MacBook Pro,M4Pro,14,24,Unknown,Unknown,1,69500,69500,69500.0
 MacBook Pro,Unknown,13,8,256,Unknown,3,6500,7000,6666.666666666667
@@ -181,7 +189,8 @@ MacBook Pro,Unknown,13,16,Unknown,Unknown,6,10000,23500,15083.333333333334
 MacBook Pro,Unknown,13,128,Unknown,Unknown,3,3000,8500,5500.0
 MacBook Pro,Unknown,13,Unknown,256,Unknown,2,5000,9900,7450.0
 MacBook Pro,Unknown,13,Unknown,512,Unknown,5,1500,25000,10499.6
-MacBook Pro,Unknown,13,Unknown,Unknown,Unknown,55,1,888888,27431.963636363635
+MacBook Pro,Unknown,13,Unknown,Unknown,In Warranty,1,45000,45000,45000.0
+MacBook Pro,Unknown,13,Unknown,Unknown,Unknown,54,1,888888,27106.62962962963
 MacBook Pro,Unknown,14,16,Unknown,Unknown,6,45000,48000,45500.0
 MacBook Pro,Unknown,14,Unknown,Unknown,Unknown,8,6000,77900,30212.25
 MacBook Pro,Unknown,15,8,256,Unknown,1,12000,12000,12000.0

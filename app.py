@@ -183,14 +183,15 @@ def extract_ram(title):
     return "Unknown"
 
 def extract_warranty(title):
-    title = title.lower()
-    has_applecare = "applecare" in title.replace(" ", "")
-    if "保固內" in title:
-        return "In Warranty"
-    elif "過保" in title:
-        return "Expired Warranty"
-    elif has_applecare:
+    title = title.lower().replace(" ", "")
+    if "applecare+" in title:
+        return "AppleCare+"
+    if "applecare" in title:
         return "AppleCare"
+    if "保固" in title and "過保" not in title:
+        return "In Warranty"
+    if "過保" in title:
+        return "Expired Warranty"
     return "Unknown"
 
 def parse_price(price_str):
