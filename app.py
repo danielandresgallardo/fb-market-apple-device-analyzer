@@ -39,6 +39,10 @@ print(f"Loaded {len(all_data)} listings from {data_dir}")
 
 # === Extraction Functions ===
 
+def extract_year(title):
+    match = re.search(r"\b(201\d|202\d|2025)\b", title)
+    return match.group(0) if match else "Unknown"
+
 def extract_apple_model(title):
     title = title.lower()
 
@@ -214,6 +218,7 @@ for item in all_data:
     item["ram"] = ram if ram is not None else extract_ram(item["title"])
     item["warranty"] = extract_warranty(item["title"])
     item["price_num"] = parse_price(item["price"])
+    item["year"] = extract_year(item["title"])
 
 # === DataFrame ===
 df = pd.DataFrame(all_data)
@@ -228,7 +233,7 @@ df_clean = df_clean.dropna(subset=["price_num"])
 df_clean = df_clean[df_clean["price_num"] > 0]
 
 # === Summary Stats ===
-summary = df_clean.groupby(["model", "processor", "screen_size", "ram", "storage", "warranty"]).agg(
+summary = df_clean.groupby(["model", "processor", "screen_size", "ram", "storage", "year", "warranty"]).agg(
     count=("price_num", "count"),
     min_price=("price_num", "min"),
     max_price=("price_num", "max"),
@@ -260,7 +265,7 @@ unknown_ram.to_csv(os.path.join(output_data_dir, "unknown_ram.csv"), index=False
 
 # === Export Unknown Model Listings ===
 unknown_model_df = df[df["model"] == "MacBook Unknown"]
-unknown_model_df[["model", "screen_size", "ram", "storage", "title"]].to_csv(
+unknown_model_df[["model", "screen_size", "ram", "storage", "year", "title"]].to_csv(
     os.path.join(output_data_dir, "unknown_apple_model.csv"),
     index=False
 )
@@ -269,12 +274,12 @@ print(f"Saved {len(unknown_model_df)} unknown model listings to unknown_apple_mo
 # === Save Unknown Screen Size Listings ===
 unknown_screen_size = df[
     (df["screen_size"] == "Unknown") & df["model"].str.startswith("MacBook")
-][["model", "processor", "screen_size", "storage", "ram", "title"]]
+][["model", "processor", "screen_size", "storage", "ram", "year", "title"]]
 unknown_screen_size.to_csv(os.path.join(output_data_dir, "unknown_screen_size.csv"), index=False)
 print(f"Saved {len(unknown_screen_size)} unknown screen size listings to unknown_screen_size.csv")
 
 # === Save Full Verification File ===
-verification_cols = ["model", "processor", "screen_size", "storage", "ram", "title"]
+verification_cols = ["model", "processor", "screen_size", "storage", "ram", "year", "title"]
 df[verification_cols].to_csv(os.path.join(output_data_dir, "apple_devices_verification.csv"), index=False)
 print(f"Saved verification file with {len(df)} listings to apple_devices_verification.csv")
 
